@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stahpuhr</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .background-dark {
+            background-color: #262626;
+        }
+
+        .margin-top {
+            margin-top: 75px;
+        }
+        .button {
+            margin: 0 15px;
+            padding: 15px;
+            font-family: 'helvetica','sans-serif';
+        }
+        #timer{
+            font-size: 7em;
+            font-family: helvetica;
+            margin-bottom: 25px;
+            color: white;
+        }
+        #left {
+            display: inline-block;
+            padding: 30px 60px;
+            background-color: green;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 64px;
+            border: none;
+        }
+        #right{
+            display: inline-block;
+            padding: 30px 60px;
+            background-color: red;
+            text-align: center;
+            cursor: pointer;
+            font-size: 64px;
+            border: none;
+        }
+        #reset {
+            display: inline-block;
+            padding: 30px 60px;
+            background-color: grey;
+            text-align: center;
+            cursor: pointer;
+            font-size: 64px;
+            border: none;
+        }
+        #round {
+            display: inline-block;
+            padding: 30px 60px;
+            background-color: black;
+            text-align: center;
+            cursor: pointer;
+            font-size: 64px;
+            border: none;
+            color: white;
+        }
+       #rounds {
+           font-size: 2em;
+           font-family: monospace;
+           color: white;
+           max-height: 300px;
+           overflow: auto;
+       }
+    </style>
+</head>
+<body class="background-dark">
+    <div class="margin-top">
+        <div id="timer">00:00:00:00</div>
+        <div id="rounds"></div>
+    </div>
+    <div class="button margin-top">
+        <button id="left"   onclick="start()">Start</button>
+        <button id="right"  onclick="stop()">Stop</button>
+        <button id="reset"  onclick="reset(true)">Reset</button>
+        <button id="round"  onclick="round()">Round</button>
+    </div>
+    <script src="stoppuhr.js"></script>
+</body>
+</html>
