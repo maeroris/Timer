@@ -7,89 +7,79 @@
     <title>Stahpuhr</title>
     <style>
         body {
-            width: 100vw;
-            height: 100vh;
-            margin: 0;
-            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            display: flex;
-        }
-        .background-dark {
             background-color: #262626;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            margin: 0;
+            width: 100vw;
         }
 
-        .margin-top {
-            margin-top: 75px;
+        .counter {
+            margin: 5rem 0;
         }
+
+        .controls {
+            margin-top: 5rem;
+        }
+
         .button {
-            margin: 0 15px;
-            padding: 15px;
-            font-family: 'helvetica','sans-serif';
-        }
-        #timer{
-            font-size: 7em;
-            font-family: monospace;
-            margin-bottom: 25px;
-            color: white;
-        }
-        #left {
+            border: none;
+            cursor: pointer;
             display: inline-block;
+            border: 0;
+            font-family: monospace;
+            font-size: 40px;
             padding: 30px 60px;
-            background-color: green;
             text-align: center;
             text-decoration: none;
-            cursor: pointer;
-            font-size: 64px;
-            border: none;
         }
-        #right{
-            display: inline-block;
-            padding: 30px 60px;
+
+        .counter--value {
+            color: white;
+            font-family: monospace;
+            font-size: 7em;
+            margin-bottom: 25px;
+        }
+
+        .counter--rounds {
+            font-size: 2em;
+            font-family: monospace;
+            color: white;
+            max-height: 300px;
+            overflow: auto;
+        }
+
+        .button--start {
+            background-color: green;
+        }
+
+        .button--stop {
             background-color: red;
-            text-align: center;
-            cursor: pointer;
-            font-size: 64px;
-            border: none;
         }
-        #reset {
-            display: inline-block;
-            padding: 30px 60px;
+
+        .button--reset {
             background-color: grey;
-            text-align: center;
-            cursor: pointer;
-            font-size: 64px;
-            border: none;
         }
-        #round {
-            display: inline-block;
-            padding: 30px 60px;
+
+        .button--round {
             background-color: black;
-            text-align: center;
-            cursor: pointer;
-            font-size: 64px;
-            border: none;
             color: white;
         }
-       #rounds {
-           font-size: 2em;
-           font-family: monospace;
-           color: white;
-           max-height: 300px;
-           overflow: auto;
-       }
     </style>
 </head>
-<body class="background-dark">
-    <div class="margin-top">
-        <div id="timer">00:00:00:00</div>
-        <div id="rounds"></div>
+<body>
+    <div class="counter">
+        <div class="counter--value" id="timer">00:00:00:00</div>
+        <div class="counter--rounds" id="rounds"></div>
     </div>
-    <div class="button margin-top">
-        <button id="left"   onclick="start()">Start</button>
-        <button id="right"  onclick="stop()">Stop</button>
-        <button id="reset"  onclick="reset(true)">Reset</button>
-        <button id="round"  onclick="round()">Round</button>
+    <div class="controls">
+        <button class="button button--start" onclick="start()">Start</button>
+        <button class="button button--stop" onclick="stop()">Stop</button>
+        <button class="button button--reset" onclick="reset(true)">Reset</button>
+        <button class="button button--round" onclick="round()">Round</button>
     </div>
     <script src="stoppuhr.js"></script>
 </body>
