@@ -8,6 +8,7 @@ var rounds = []
 
 function start()    {
     pause = false;
+    lastTimer = new Date();
     currentTimer();
 }
 function round()    {
@@ -57,4 +58,3 @@ function formattedTime(number)  {
         minimumIntegerDigits: 2,
     })
 }
-updateTimer();
