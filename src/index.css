@@ -4,7 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0;
   width: 100vw;
 }
@@ -44,6 +44,7 @@ body {
   color: white;
   max-height: 150px;
   overflow: auto;
+  text-align: center;
 }
 
 .button--start {
