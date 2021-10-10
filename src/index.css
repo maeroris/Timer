@@ -11,10 +11,12 @@ body {
 
 .counter {
   margin: 5rem 0;
+  height: 50rem;
 }
 
 .controls {
   margin-top: 5rem;
+  position: absolute;
 }
 
 .button {
@@ -40,7 +42,7 @@ body {
   font-size: 2em;
   font-family: monospace;
   color: white;
-  max-height: 300px;
+  max-height: 150px;
   overflow: auto;
 }
 
