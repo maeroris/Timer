@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stahpuhr</title>
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+</head>
+<body>
+    <div class="counter">
+        <div class="counter--value" id="timer">00:00:00:00</div>
+        <div class="counter--rounds" id="rounds"></div>
+    </div>
+    <div class="controls">
+        <button class="button button--start" onclick="start()">Start</button>
+        <button class="button button--stop" onclick="stop()">Stop</button>
+        <button class="button button--reset" onclick="reset(true)">Reset</button>
+        <button class="button button--round" onclick="round()">Round</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
