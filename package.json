@@ -1,0 +1,25 @@
+{
+  "name": "timer",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maeroris/Timer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maeroris/Timer/issues"
+  },
+  "homepage": "https://github.com/maeroris/Timer#readme",
+  "dependencies": {
+    "parcel": "^2.0.0-rc.0"
+  }
+}
