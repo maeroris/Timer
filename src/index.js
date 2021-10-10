@@ -1,7 +1,7 @@
+import {kebabCase} from 'lodash'
 import {formatTime, formattedTime} from './js/utils'
 const anzeige = document.getElementById("timer");
 const roundsanzeige = document.getElementById("rounds")
-
 
 var stopTimer = 0;
 var pause = true;

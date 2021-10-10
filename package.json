@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/maeroris/Timer#readme",
   "dependencies": {
+    "lodash": "^4.17.21",
     "parcel": "^2.0.0-rc.0"
   }
 }
