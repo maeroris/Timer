@@ -4,25 +4,24 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: space-around;
+  justify-content: center;
   margin: 0;
   width: 100vw;
 }
 
 .counter {
   margin: 5rem 0;
-  height: 50rem;
 }
 
 .controls {
   margin-top: 5rem;
-  position: absolute;
+  display: contents;
 }
 
 .button {
   border: none;
   cursor: pointer;
-  display: inline-block;
+  display:inline-block;
   border: 0;
   font-family: monospace;
   font-size: 40px;
@@ -34,15 +33,23 @@ body {
 .counter--value {
   color: white;
   font-family: monospace;
-  font-size: 7em;
+  font-size: 4em;
   margin-bottom: 25px;
+}
+@media screen and (min-width: 800px) { 
+  .counter--value {
+    font-size: 7em;
+  }
+  .controls {
+    display: flex;
+  }
 }
 
 .counter--rounds {
   font-size: 2em;
   font-family: monospace;
   color: white;
-  max-height: 150px;
+  height: 150px;
   overflow: auto;
   text-align: center;
 }
